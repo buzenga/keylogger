@@ -11,12 +11,7 @@ let pressed = [];
 let colorCode = "!!!!!!";
 
 
-btnFollow.addEventListener("click", () => {
-   typedString = [];
-   clickCounter++;
-   textDisplay.textContent = "";
-   
-})
+
 
    window.addEventListener("keydown", (e) => {
       if (clickCounter > 1) return;
@@ -29,12 +24,7 @@ btnFollow.addEventListener("click", () => {
 
    })
 
-btnDisplay.addEventListener("click", (e) => {
-  
-   let message = typedString.join("");
-   textDisplay.textContent = message;
-   clickCounter = 0;
-})
+
 
 window.addEventListener("keydown", (e) => {
    // console.log(e)
